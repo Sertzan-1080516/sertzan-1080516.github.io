@@ -84,8 +84,7 @@
     <h3 style="display: flex; justify-content: center;">Project(en):</h3>
   </header>
   <section class="d-flex justify-content-center">
-    <article class="card text-white bg-secondary mb-3 text-center" id="wp4"
-      style="width: 300px; height: 325px;">
+    <article class="card text-white bg-secondary mb-3 text-center" id="wp4" style="width: 300px; height: 325px;">
       <div class="card-body">
         <h5 class="card-title">WP4</h5>
         <p class="card-text">Een mobiele applicatie maken voor Hogeschool Rotterdam waar studenten bronnen kunnen
@@ -94,7 +93,34 @@
         <p>
           Schoolproject - prive repository
         </p>
-        <a href="#contact_me" class="btn btn-primary">Contact me</a>
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+          Contact Me
+        </button>
+      </div>
+      <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" style="color: black;">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5 w-100" id="staticBackdropLabel">Contact Info</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body d-flex justify-content-evenly">
+              <a data-bs-toggle="tooltip" title="Quick check will be appreciated" class="text-decoration-none"
+                id="_mail" href="mailto:1080516@hr.nl">Mail</a>
+              <button class="btn"><i class="fa-regular fa-copy"></i></button>
+              <a data-bs-toggle="tooltip" title="Quick check will be appreciated" class="text-decoration-none"
+                id="_linkedin" href="https://www.linkedin.com/in/sertzan-siakir-024b3b266/">LinkedIn</a><br>
+              <button class="btn"><i class="fa-regular fa-copy"></i></button>
+              <a data-bs-toggle="tooltip" title="Quick check will be appreciated" class="text-decoration-none"
+                id="_github" href="https://github.com/Sertzan-1080516">GitHub</a>
+              <button class="btn"><i class="fa-regular fa-copy"></i></button>
+            </div>
+            <div class="modal-footer d-flex justify-content-center">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
       </div>
     </article>
   </section>
