@@ -108,14 +108,15 @@
             <div class="modal-body d-flex justify-content-evenly">
               <a data-bs-toggle="tooltip" title="Quick check will be appreciated" class="text-decoration-none"
                 id="_mail" href="mailto:1080516@hr.nl">Mail</a>
-              <button class="btn"><i class="fa-regular fa-copy"></i></button>
+              <button onclick="copy('_mail')" class="btn"><i class="fa-regular fa-copy"></i></button>
               <a data-bs-toggle="tooltip" title="Quick check will be appreciated" class="text-decoration-none"
                 id="_linkedin" href="https://www.linkedin.com/in/sertzan-siakir-024b3b266/">LinkedIn</a><br>
-              <button class="btn"><i class="fa-regular fa-copy"></i></button>
+              <button onclick="copy('_linkedin')" class="btn"><i class="fa-regular fa-copy"></i></button>
               <a data-bs-toggle="tooltip" title="Quick check will be appreciated" class="text-decoration-none"
                 id="_github" href="https://github.com/Sertzan-1080516">GitHub</a>
-              <button class="btn"><i class="fa-regular fa-copy"></i></button>
+              <button onclick="copy('_github')" class="btn"><i class="fa-regular fa-copy"></i></button><br><br>
             </div>
+            <p>Voor meerdere projecten kunt u mij bereiken via deze links.</p>
             <div class="modal-footer d-flex justify-content-center">
               <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
             </div>
@@ -124,7 +125,7 @@
       </div>
     </article>
   </section>
-  <footer id="contact_me" class="_footer">
+  <footer id="contact_me" class="d-flex justify-content-around bg-info">
     <address class="contact_">
       <h4>Contact</h4><br>
       <a href="mailto:1080516@hr.nl"><i class="fa-solid fa-at fa-2xl"></i></a>
