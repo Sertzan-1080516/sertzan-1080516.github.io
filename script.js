@@ -12,3 +12,12 @@ function copy(id) {
   }
   navigator.clipboard.writeText(copy);
 }
+
+function show_languages() {
+  var show_table = document.getElementById("testing");
+  if (show_table.display === "block") {
+    show_table.style.display = "none";
+  } else {
+    show_table.style.display = "block";
+  }
+}
