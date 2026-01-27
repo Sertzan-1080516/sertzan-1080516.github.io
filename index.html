@@ -1,143 +1,378 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+    <title>Sertzan Siakir - Software Developer</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
-  <title>Sertzan Siakir - Software Developer</title>
-</head>
-
-<body>
-  <nav class="navbar navbar-expand-lg bg-body-tertiary ">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">Menu</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#wp4">Projects</a>
-          </li>
-          <li class="nav-item">
-            <a onclick="show_languages()" class="nav-link" href="#_skills">Skills</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#contact_me">Contact</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-  <header class="_headers">
-    <h1>Hoi, ik ben Sertzan</h1>
-    <p>Ik wil graag carrière maken in softwareontwikkeling en ben op
-      zoek naar stages.Mijn interesse gaat met name uit naar het ontwikkelen van mobiele applicaties.</p>
-    <p id="testing" style="display: none;">test</p>
-  </header>
-  <section>
-    <div class="progress_bar" id="_skills">
-      <picture>
-        <source srcset="/images/Sertzan_Siakir.png" type="image/svg+xml">
-        <img src="/images/Sertzan_Siakir.png" class="img-fluid img-thumbnail" alt="Sertzan Siakir Profile Photo"
-          style="width:250px; border-radius: 40%;">
-      </picture>
-      <h2 class="text-center mb-3">Skills</h2>
-      <p>Python</p>
-      <div class="progress" role="progressbar" aria-label="Animated striped for Python" aria-valuenow="55"
-        aria-valuemin="0" aria-valuemax="100" style="width: 75%">
-        <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 55%">55%</div>
-      </div>
-      <p>HTML / CSS</p>
-      <div class="progress" role="progressbar" aria-label="Animated striped for HTML/CSS" aria-valuenow="60"
-        aria-valuemin="0" aria-valuemax="100" style="width: 75%">
-        <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 60%">60%</div>
-      </div>
-      <p>Flask / FastAPI</p>
-      <div class="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="65"
-        aria-valuemin="0" aria-valuemax="100" style="width: 75%">
-        <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 65%">65%</div>
-      </div>
-      <p>SQLite / SQLModel</p>
-      <div class="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="60"
-        aria-valuemin="0" aria-valuemax="100" style="width: 75%">
-        <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 60%">60%</div>
-      </div>
-      <p>JavaScript</p>
-      <div class="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="50"
-        aria-valuemin="0" aria-valuemax="100" style="width: 75%">
-        <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 50%">50%</div>
-      </div>
-      <p>GitHub</p>
-      <div class="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="50"
-        aria-valuemin="0" aria-valuemax="100" style="width: 75%">
-        <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 55%">55%</div>
-  </section>
-  <header class="_headers">
-    <h3 style="display: flex; justify-content: center;">Project(en):</h3>
-  </header>
-  <section class="d-flex justify-content-center">
-    <article class="card text-white bg-secondary mb-3 text-center" id="wp4" style="width: 300px; height: 325px;">
-      <div class="card-body">
-        <h5 class="card-title">WP4</h5>
-        <p class="card-text">Een mobiele applicatie maken voor Hogeschool Rotterdam waar studenten bronnen kunnen
-          toevoegen aan bepaalde lessen.</p>
-        <p>Technieken: React Native, REST API, SQLAlchemy</p>
-        <p>
-          Schoolproject - prive repository
-        </p>
-        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-          Contact Me
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Menu</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
         </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#wp4">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a
+                onclick="show_languages('_progress_taal')"
+                class="nav-link"
+                href="#_skills"
+                >Skills</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact_me">Contact</a>
+            </li>
+          </ul>
+        </div>
       </div>
-      <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-        aria-labelledby="staticBackdropLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" style="color: black;">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h1 class="modal-title fs-5 w-100" id="staticBackdropLabel">Contact Info</h1>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body d-flex justify-content-evenly">
-              <a data-bs-toggle="tooltip" title="Quick check will be appreciated" class="text-decoration-none"
-                id="_mail" href="mailto:1080516@hr.nl">Mail</a>
-              <button onclick="copy('_mail')" class="btn"><i class="fa-regular fa-copy"></i></button>
-              <a data-bs-toggle="tooltip" title="Quick check will be appreciated" class="text-decoration-none"
-                id="_linkedin" href="https://www.linkedin.com/in/sertzan-siakir-024b3b266/">LinkedIn</a><br>
-              <button onclick="copy('_linkedin')" class="btn"><i class="fa-regular fa-copy"></i></button>
-              <a data-bs-toggle="tooltip" title="Quick check will be appreciated" class="text-decoration-none"
-                id="_github" href="https://github.com/Sertzan-1080516">GitHub</a>
-              <button onclick="copy('_github')" class="btn"><i class="fa-regular fa-copy"></i></button><br><br>
-            </div>
-            <p>Voor meerdere projecten kunt u mij bereiken via deze links.</p>
-            <div class="modal-footer d-flex justify-content-center">
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-            </div>
+    </nav>
+    <header class="_headers">
+      <h1>Hoi, ik ben Sertzan</h1>
+      <p>
+        Ik wil graag carrière maken in softwareontwikkeling en ben op zoek naar
+        stages.Mijn interesse gaat met name uit naar het ontwikkelen van mobiele
+        applicaties.
+      </p>
+      <p id="testing" style="display: none">test</p>
+    </header>
+    <section>
+      <div class="progress_bar" id="_skills">
+        <picture>
+          <source srcset="/images/Sertzan_Siakir.png" type="image/svg+xml" />
+          <img
+            src="/images/Sertzan_Siakir.png"
+            class="img-fluid img-thumbnail"
+            alt="Sertzan Siakir Profile Photo"
+            style="width: 250px; border-radius: 40%"
+          />
+        </picture>
+        <h2 class="text-center mb-3">Skills</h2>
+        <p>Python</p>
+        <div
+          class="progress"
+          role="progressbar"
+          aria-label="Animated striped for Python"
+          aria-valuenow="55"
+          aria-valuemin="0"
+          aria-valuemax="100"
+          style="width: 75%"
+        >
+          <div
+            class="progress-bar progress-bar-striped progress-bar-animated"
+            style="width: 55%"
+          >
+            55%
+          </div>
+        </div>
+        <p>HTML / CSS</p>
+        <div
+          class="progress"
+          role="progressbar"
+          aria-label="Animated striped for HTML/CSS"
+          aria-valuenow="60"
+          aria-valuemin="0"
+          aria-valuemax="100"
+          style="width: 75%"
+        >
+          <div
+            class="progress-bar progress-bar-striped progress-bar-animated"
+            style="width: 60%"
+          >
+            60%
+          </div>
+        </div>
+        <p>Flask / FastAPI</p>
+        <div
+          class="progress"
+          role="progressbar"
+          aria-label="Animated striped example"
+          aria-valuenow="65"
+          aria-valuemin="0"
+          aria-valuemax="100"
+          style="width: 75%"
+        >
+          <div
+            class="progress-bar progress-bar-striped progress-bar-animated"
+            style="width: 65%"
+          >
+            65%
+          </div>
+        </div>
+        <p>SQLite / SQLModel</p>
+        <div
+          class="progress"
+          role="progressbar"
+          aria-label="Animated striped example"
+          aria-valuenow="60"
+          aria-valuemin="0"
+          aria-valuemax="100"
+          style="width: 75%"
+        >
+          <div
+            class="progress-bar progress-bar-striped progress-bar-animated"
+            style="width: 60%"
+          >
+            60%
+          </div>
+        </div>
+        <p>JavaScript</p>
+        <div
+          class="progress"
+          role="progressbar"
+          aria-label="Animated striped example"
+          aria-valuenow="50"
+          aria-valuemin="0"
+          aria-valuemax="100"
+          style="width: 75%"
+        >
+          <div
+            class="progress-bar progress-bar-striped progress-bar-animated"
+            style="width: 50%"
+          >
+            50%
+          </div>
+        </div>
+        <p>GitHub</p>
+        <div
+          class="progress"
+          role="progressbar"
+          aria-label="Animated striped example"
+          aria-valuenow="50"
+          aria-valuemin="0"
+          aria-valuemax="100"
+          style="width: 75%"
+        >
+          <div
+            class="progress-bar progress-bar-striped progress-bar-animated"
+            style="width: 55%"
+          >
+            55%
           </div>
         </div>
       </div>
-    </article>
-  </section>
-  <footer id="contact_me" class="d-flex justify-content-around bg-info">
-    <address class="contact_">
-      <h4>Contact</h4><br>
-      <a href="mailto:1080516@hr.nl"><i class="fa-solid fa-at fa-2xl"></i></a>
-      <a href="https://www.linkedin.com/in/sertzan-siakir-024b3b266/"><i class="fa-brands fa-linkedin fa-2xl"></i></a>
-      <a href="https://github.com/Sertzan-1080516"><i class="fa-brands fa-github fa-2xl"></i></a>
-    </address>
-  </footer>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-    crossorigin="anonymous"></script>
-  <script src="script.js"></script>
-</body>
+    </section>
+    <section
+      onclick="show_languages('_progress_taal')"
+      style="display: none"
+      id="_progress_taal"
+      class="progress_bar_2"
+    >
+      <h2 class="text-center mb-3">Languages</h2>
+      <p>Nederlands</p>
+      <div
+        class="progress"
+        role="progressbar"
+        aria-label="Animated striped example"
+        aria-valuenow="50"
+        aria-valuemin="0"
+        aria-valuemax="100"
+        style="width: 75%"
+      >
+        <div
+          class="progress-bar progress-bar-striped progress-bar-animated"
+          style="width: 55%"
+        >
+          55%
+        </div>
+      </div>
+      <p>Engels</p>
 
+      <div
+        class="progress"
+        role="progressbar"
+        aria-label="Animated striped example"
+        aria-valuenow="50"
+        aria-valuemin="0"
+        aria-valuemax="100"
+        style="width: 75%"
+      >
+        <div
+          class="progress-bar progress-bar-striped progress-bar-animated"
+          style="width: 55%"
+        >
+          55%
+        </div>
+      </div>
+      <p>Turks</p>
+      <div
+        class="progress"
+        role="progressbar"
+        aria-label="Animated striped example"
+        aria-valuenow="50"
+        aria-valuemin="0"
+        aria-valuemax="100"
+        style="width: 75%"
+      >
+        <div
+          class="progress-bar progress-bar-striped progress-bar-animated"
+          style="width: 55%"
+        >
+          55%
+        </div>
+      </div>
+      <p>Grieks</p>
+      <div
+        class="progress"
+        role="progressbar"
+        aria-label="Animated striped example"
+        aria-valuenow="50"
+        aria-valuemin="0"
+        aria-valuemax="100"
+        style="width: 75%"
+      >
+        <div
+          class="progress-bar progress-bar-striped progress-bar-animated"
+          style="width: 55%"
+        >
+          55%
+        </div>
+      </div>
+    </section>
+    <header class="_headers">
+      <h3 style="display: flex; justify-content: center">Project(en):</h3>
+    </header>
+    <section class="d-flex justify-content-center">
+      <article
+        class="card text-white bg-secondary mb-3 text-center"
+        id="wp4"
+        style="width: 300px; height: 325px"
+      >
+        <div class="card-body">
+          <h5 class="card-title">WP4</h5>
+          <p class="card-text">
+            Een mobiele applicatie maken voor Hogeschool Rotterdam waar
+            studenten bronnen kunnen toevoegen aan bepaalde lessen.
+          </p>
+          <p>Technieken: React Native, REST API, SQLAlchemy</p>
+          <p>Schoolproject - prive repository</p>
+          <button
+            type="button"
+            class="btn btn-primary"
+            data-bs-toggle="modal"
+            data-bs-target="#staticBackdrop"
+          >
+            Contact Me
+          </button>
+        </div>
+        <div
+          class="modal fade"
+          id="staticBackdrop"
+          data-bs-backdrop="static"
+          data-bs-keyboard="false"
+          tabindex="-1"
+          aria-labelledby="staticBackdropLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-dialog-centered" style="color: black">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5 w-100" id="staticBackdropLabel">
+                  Contact Info
+                </h1>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body d-flex justify-content-evenly">
+                <a
+                  data-bs-toggle="tooltip"
+                  title="Quick check will be appreciated"
+                  class="text-decoration-none"
+                  id="_mail"
+                  href="mailto:1080516@hr.nl"
+                  >Mail</a
+                >
+                <button onclick="copy('_mail')" class="btn">
+                  <i class="fa-regular fa-copy"></i>
+                </button>
+                <a
+                  data-bs-toggle="tooltip"
+                  title="Quick check will be appreciated"
+                  class="text-decoration-none"
+                  id="_linkedin"
+                  href="https://www.linkedin.com/in/sertzan-siakir-024b3b266/"
+                  >LinkedIn</a
+                ><br />
+                <button onclick="copy('_linkedin')" class="btn">
+                  <i class="fa-regular fa-copy"></i>
+                </button>
+                <a
+                  data-bs-toggle="tooltip"
+                  title="Quick check will be appreciated"
+                  class="text-decoration-none"
+                  id="_github"
+                  href="https://github.com/Sertzan-1080516"
+                  >GitHub</a
+                >
+                <button onclick="copy('_github')" class="btn">
+                  <i class="fa-regular fa-copy"></i></button
+                ><br /><br />
+              </div>
+              <p>Voor meerdere projecten kunt u mij bereiken via deze links.</p>
+              <div class="modal-footer d-flex justify-content-center">
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  data-bs-dismiss="modal"
+                >
+                  Close
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+    </section>
+    <footer id="contact_me" class="d-flex justify-content-around bg-info">
+      <address class="contact_">
+        <h4>Contact</h4>
+        <br />
+        <a href="mailto:1080516@hr.nl"><i class="fa-solid fa-at fa-2xl"></i></a>
+        <a href="https://www.linkedin.com/in/sertzan-siakir-024b3b266/"
+          ><i class="fa-brands fa-linkedin fa-2xl"></i
+        ></a>
+        <a href="https://github.com/Sertzan-1080516"
+          ><i class="fa-brands fa-github fa-2xl"></i
+        ></a>
+      </address>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
 </html>
