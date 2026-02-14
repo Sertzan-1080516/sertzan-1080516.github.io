@@ -1,12 +1,8 @@
-.progress_bar {
-  display: flex;
-  flex-direction: column;
-  background-color: #f8f9fa;
+.progress_bar1 {
   padding: 30px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
   width: 300px;
-  position: relative;
 }
 
 ._headers {
